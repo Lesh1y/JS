@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson4</title>
+  <link rel="stylesheet" href="lesson4_3.css">
+  <script src="lesson4_3_text.js" defer></script>
+  <script src="lesson4_3.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2 class="game-header">Кто хочет стать миллионером</h2>
+    <p claas="score">Счёт: </p>
+    <div class="game">
+      <p id="question">Вопрос</p>
+      <p id="1">Ответ 1</p>
+      <p id="2">Ответ 2</p>
+      <p id="3">Ответ 3</p>
+      <p id="4">Ответ 4</p>
+    </div>
+    <form class="answer-form">
+      Ваш ответ: <input type="text" placeholder="Введите номер ответа" id="userAnswer">
+      <input type="submit" name="submit" value="Ответить" onclick="checkAnswer();">
+    </form>
+    <a onclick="dropTwoAnswer();" class="help" id="drop">50/50</a>
+    <a onclick="getPercent();" class="help" id="percent">Помощь зала</a>
+    <a onclick="getFriendAnswer();" class="help" id="friend">Звонок другу</a>
+  </div>
+</body>
+</html>
