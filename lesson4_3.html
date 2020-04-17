@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>lesson4</title>
+  <link rel="stylesheet" href="lesson4_3.css">
+  <script src="scripts/lesson4_3_text.js" defer></script>
+  <script src="scripts/lesson4_3.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="game">
+      <div id="drop" class="help-div"><a onclick="dropTwoAnswer()"><img src="img/50_50.png" alt="50 на 50"></a></div>
+      <div id="percent" class="help-div"><a onclick="getPercent()"><img src="img/hall_help.png" alt="помощь зала"></a></div>
+      <div id="friend" class="help-div"><a onclick="getFriendAnswer()"><img src="img/phone.png" alt="звонок другу"></a></div>
+      <p class="score"></p>
+      <p id="question"></p>
+      <p class="answer" id="a1" onclick="checkAnswer('a1')"></p>
+      <p class="answer" id="a3" onclick="checkAnswer('a3')"></p>
+      <p class="answer" id="a2" onclick="checkAnswer('a2')"></p>
+      <p class="answer" id="a4" onclick="checkAnswer('a4')"></p>
+</body>
+
+</html>

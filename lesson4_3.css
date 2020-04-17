@@ -1,0 +1,92 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1099px;
+  margin: 0 auto;
+}
+
+.game {
+  min-width: 1099px;
+  min-height: 619px;
+  background-image: url(img/bg.jpg);
+  color: white;
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  color: #febc0f;
+  font-size: 20px;
+}
+
+.help-div {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.help-div a {
+  text-decoration: none;
+
+}
+
+
+.help-div a:hover{
+  cursor: help;
+}
+
+.answer {
+  max-width: 334px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.answer:hover {
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+#question {
+  max-width: 775px;
+  position: absolute;
+  top: 320px;
+  left: 160px;
+  font-weight: 700;
+}
+
+#a1 {
+  top: 425px;
+  left: 178px;
+}
+
+#a2 {
+  top: 425px;
+  left: 634px;
+
+}
+
+#a3 {
+  top: 495px;
+  left: 178px;
+}
+
+#a4 {
+  top: 495px;
+  left: 634px;
+}

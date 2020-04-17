@@ -1,0 +1,48 @@
+.main {
+  margin: 0 auto;
+  width: 670px;
+  height: 690px;
+  outline: 1px solid black;
+}
+
+.board {
+  width: 100%
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-size: 65px;
+}
+
+.black {
+  color: white;
+  background: #9a480f;
+}
+
+.color-black {
+  color: black;
+}
+
+.white {
+  text-align: center;
+  text-transform: uppercase;
+  background: #d9b077;
+}
+
+.color-white {
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+.rotate-td {
+  text-align: center;
+  transform: rotate(180deg);
+}
