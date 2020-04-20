@@ -1,0 +1,258 @@
+.container {
+  width: 550px;
+  height: 520px;
+  margin: 0 auto;
+}
+
+#largeImg {
+  outline: solid 1px #FF9900;
+  width: 544px;
+  height: 400px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#thumbs {
+  padding: 0;
+  list-style: none;
+}
+
+#thumbs a {
+  outline: solid 1px #ccc;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  margin-right: 6px;
+  float: left;
+}
+
+
+#thumbs a:hover {
+  outline-color: #FF9900;
+}
+
+
+/*Задание 2*/
+* {
+  margin: 0;
+}
+
+.row {
+  width: 735px;
+  margin: 0 auto;
+  background-image: url(img/main_bg.jpg);
+}
+
+.basket {
+  width: 250px;
+  margin-left: 250px;
+}
+
+.basket>.header, .basket>.content, .basket>.footer {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.basket>.header {
+  background-image: url(img/bg.jpg);
+  height: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.basket>.header>.header-p> {
+  display: inline-block;
+}
+
+.basket>.header>.header-p>.delete {
+  float: right;
+  margin-top: 2px;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.basket>.content {
+  background-color: #fcfaf6;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.basket>.content>.product {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 50px;
+}
+
+.basket>.content>.product img {
+  float: left;
+  margin-right: 10px;
+}
+
+.basket>.content>.product>.disc {
+  display: inline-block;
+  max-width: 100px;
+  float: left;
+}
+
+.count-price {
+  color: red;
+}
+
+.basket>.content>.product>.delete {
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.basket>.footer {
+  height: 76px;
+  background-image: url(img/btm_section.png);
+  padding-top: 15px;
+  padding-bottom: 26px;
+  position: relative;
+}
+
+.basket>.footer>#total_sum {
+  color: red;
+}
+
+.basket>.footer>.button {
+  display: block;
+  position: absolute;
+  left: 126px;
+  top: 20px;
+  text-decoration: none;
+  width: 109px;
+  height: 30px;
+  background-color: #fbae5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#catalog {
+  list-style-type: none;
+  width: 930px;
+  margin: 20px auto;
+}
+
+#catalog>li {
+  float: left;
+  outline: 1px solid black;
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#catalog>li>img {
+  float: left;
+  margin-right: 5px;
+}
+
+#catalog>li>.button {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  width: 109px;
+  height: 30px;
+  background-color: #fbae5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#catalog>li>p {
+  max-height: 200px;
+  overflow: auto;
+}
+
+#catalog>li>.price {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: red;
+}
+
+#catalog>li>.price>input {
+  width: 100px;
+  margin-left: 5px;
+}
+
+#catalog>li:hover {
+  outline-color: red;
+}
+
+
+/*Задание 3*/
+
+#main {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+#main>li {
+  float: left;
+}
+
+#main>li:nth-of-type(1) {
+position: absolute;
+left: 0;
+top: 0;
+}
+
+#main>li:nth-of-type(2) {
+position: absolute;
+left: 120px;
+top: 0;
+}
+
+#main li:nth-of-type(3) {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+#slides{
+  width: 100px;
+  position: relative;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
